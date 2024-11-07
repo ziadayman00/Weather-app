@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    padding: 0;
+    margin: 0;    
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background-image: url(assets/19912.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(2px);
+    box-sizing: border-box;
+}
+
+.main-container{
+    background-color: rgba(255, 255, 255, 0.551);
+    height: fit-content;
+    padding: 1rem;
+    /* width: 30rem; */
+    border-radius: 1rem;
+    backdrop-filter: blur(1px);
+}
+

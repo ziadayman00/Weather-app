@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <!-- tailwind -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.3/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="input.css">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></head>
+<body>
+    <div class="main-container hover:shadow-2xl transform transition-all ease-in-out duration-200 hover:scale-105 hover:bg-opacity-50 lg:w-1/3 md:w-1/2 sm:w-full">
+        <header class="header flex justify-center">
+            <input type="search" placeholder="Search City" name="country" id="country" class=" mr-4 rounded-3xl w-3/4 h-8 bg-gray-500 bg-opacity-50 outline-none p-4 hover:bg-opacity-60 placeholder-gray-200 hover:shadow-md">
+            <i class="fa-solid fa-magnifying-glass text-gray-200 bg-gray-500 bg-opacity-50 rounded-full p-2 cursor-pointer hover:bg-opacity-60 transition-all transform ease-in-out hover:shadow-md" onclick="searchCountry()"></i>        
+        </header>
+        <main class="flex justify-between mt-4 w-4/5 mx-auto">
+            <div class="weather-info mt-auto">
+                <i class="fa-solid fa-location-dot text-gray-500"></i>
+                <h2 class="current-city text-gray-500 text-lg">Mansoura</h2>
+                <h2 id="date" class="Date text-gray-500 text-lg">Date</h2>
+                <h2 class="degree text-gray-500 text-lg">30</h2>
+            </div>
+            <div class="w-0.5 border-l-2 border-gray-400"></div>
+
+            <div class="weather-img-container">
+                <img src="assets/cloudy.png" alt="" class="w-28">
+            </div>
+        </main>
+
+    </div>    
+
+
+
+
+    <script src="main.js"></script>
+</body>
+</html>
